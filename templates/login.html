@@ -1,0 +1,107 @@
+{%  extends 'base.html' %}
+
+{% block head %}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>Signin Template · Bootstrap</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="static/signin.css" rel="stylesheet"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Favicons -->
+  <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#563d7c">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="static/signin.css" rel="stylesheet">
+</head>
+{% endblock %}
+
+
+{% block body %}
+<br>
+<br>
+<br>
+<center>
+  <br>
+  <br>
+  <svg width="10em" height="10em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+    <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+    <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+  </svg>
+  <form class="form-signin" method="POST">
+    
+
+    <br>
+    <br>
+
+    <h1 class="h3 mb-3 font-weight-normal">Please Sign In</h1>
+
+    <br>
+    <div class="field">
+      <!--<label class="label">Username</label>-->
+      <div class="control has-icons-left has-icons-right">
+        <input class="input" type="text" name="email" placeholder="Username">
+        <span class="icon is-small is-left">
+          <i class="fas fa-user"></i>
+        </span>
+      </div>
+    </div>
+
+    <!--<label for="inputEmail" class="sr-only">Email address </label>
+    <input type="text" name="email" style="width: fit-content;" id="inputEmail" class="form-control"
+      placeholder="Email Address" required autofocus>-->
+
+    <br>
+    <div class="field">
+      <!--<label class="label">Password</label>-->
+      <p class="control has-icons-left">
+        <input class="input" type="password" name="password" placeholder="Password">
+        <span class="icon is-small is-left">
+          <i class="fas fa-lock"></i>
+        </span>
+      </p>
+    </div>
+    <!--<label for="inputPassword" class="sr-only">Password</label>
+    <input type="text" name="password" style="width: fit-content;" id="inputPassword" class="form-control"
+      placeholder="Password" required>-->
+
+    <br>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" style="width: fit-content;" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" style="width: fit-content;" type="submit">Sign In</button>
+  </form>
+</center>
+{% endblock %}
